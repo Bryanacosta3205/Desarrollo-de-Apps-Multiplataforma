@@ -22,8 +22,9 @@ const App = ()  => {
 const styles = StyleSheet.create({
   sectionContainer: {
     flex:1,
-    marginTop:30,
+    margin:30,
     alignItems:'center',
+    
   },
   buttonContainer:{
     flex:1,
@@ -31,7 +32,7 @@ const styles = StyleSheet.create({
     marginBottom: 30
   },
   imageContainer:{
-    margin:30,
+   
     width:120,
     height: 120
   }
