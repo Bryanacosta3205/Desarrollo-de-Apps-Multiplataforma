@@ -6,7 +6,7 @@ const App = ()  => {
   
   return (
     <View style={styles.sectionContainer}>
-      <Text style={{fontSize:20}} >TECNOLÓGICO NACIONAL DE MÉXICO</Text>
+      <Text style={{fontSize:20,textAlign:'center'}} >TECNOLÓGICO NACIONAL DE MÉXICO CAMPUS COLIMA</Text>
       <Image style={styles.imageContainer} source={require('./image/itcolima.png')} />
       <Text>INGENIERÍA EN INFORMÁTICA</Text>
       <Text>17460639</Text>
