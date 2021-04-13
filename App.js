@@ -24,15 +24,14 @@ const styles = StyleSheet.create({
     flex:1,
     margin:30,
     alignItems:'center',
-    
   },
   buttonContainer:{
     flex:1,
     justifyContent: 'flex-end',
-    marginBottom: 30
+    
   },
   imageContainer:{
-   
+    margin:30,
     width:120,
     height: 120
   }
