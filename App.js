@@ -1,12 +1,13 @@
 import React from 'react';
 
-import {Button, StyleSheet,Text,View} from 'react-native';
+import {Button, Image, StyleSheet,Text,View} from 'react-native';
 
 const App = ()  => {
   
   return (
     <View style={styles.sectionContainer}>
-      <Text>TECNOLÓGICO NACIONAL DE MÉXICO</Text>
+      <Text style={{fontSize:20}} >TECNOLÓGICO NACIONAL DE MÉXICO</Text>
+      <Image style={styles.imageContainer} source={require('./image/itcolima.png')} />
       <Text>INGENIERÍA EN INFORMÁTICA</Text>
       <Text>17460639</Text>
       <Text>BRYAN EDUARDO GUTIÉRREZ ACOSTA</Text>
@@ -23,13 +24,16 @@ const styles = StyleSheet.create({
     flex:1,
     marginTop:30,
     alignItems:'center',
-    
   },
   buttonContainer:{
     flex:1,
     justifyContent: 'flex-end',
     marginBottom: 30
-    
+  },
+  imageContainer:{
+    margin:30,
+    width:120,
+    height: 120
   }
  
 });
