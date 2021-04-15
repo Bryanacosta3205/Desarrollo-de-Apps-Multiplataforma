@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import {Button, Image, StyleSheet, Text, View} from 'react-native';
 
 import { NavigationContainer } from '@react-navigation/native';
@@ -29,10 +29,15 @@ const HomeScreen = ({ navigation  }) => {
   );
 };
 
-const About = ()=>{
+const About = ({ navigation })=>{
   return(
     <View style={styles.sectionContainer}>
       <Text>About</Text>
+      <Button title="Volver" onPress={()=>navigation.goBack()} />
+      <Button title="Volver a Home" onPress={()=>navigation.navigate('Home')} />
+      <Button title="Volver a About" onPress={()=>navigation.navigate('About')} />
+      <Button title="Volver a About (forzado)" onPress={()=>navigation.push('About')} />
+      <Button title="Volver al principio" onPress={()=>navigation.popToTop()} />
     </View>
   );
 }
